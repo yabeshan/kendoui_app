@@ -7,6 +7,18 @@
     </div>
   </header>
   <ul data-role="listview" data-bind="source: todos" data-template="todos-template"></ul>
+
+
+    <a data-role="button" href="#foo" data-rel="popover">Open PopOver</a>
+
+    <div id="foo" data-role="popover" data-pane='{ "initial": "#view2" }'>
+        <div data-role="view" id="view1" data-title="view1">
+            View 1
+        </div>
+        <div data-role="view" id="view2" data-title="view2">
+            View 2
+        </div>
+    </div>
 </div>
 
 <script type="text/x-kendo-template" id="todos-template">
