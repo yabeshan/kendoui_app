@@ -9,7 +9,7 @@
   <ul data-role="listview" data-bind="source: todos" data-template="todos-template"></ul>
 
 
-    <a data-role="button" href="#foo" data-rel="popover">Open PopOver</a>
+    <a data-role="button" href="#foo" data-rel="popover" data-transition="overlay:up" style="transition:width 20s, height 20s, transform 20s;">Open PopOver</a>
 
     <div id="foo" data-role="popover" data-pane='{ "transition": "slide" }'>
         <div data-role="view" id="view1">
@@ -21,6 +21,9 @@
     </div>
 </div>
 
+
 <script type="text/x-kendo-template" id="todos-template">
   #: title #
 </script>
+
+
